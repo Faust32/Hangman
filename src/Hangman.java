@@ -77,11 +77,11 @@ class Hangman{
             mistakesCount++;
         }
         else {
-            putCharInBlank(blank, originalWord, symbol, mistakesCount);
+            putCharInBlank(blank, originalWord, symbol);
         }
         return mistakesCount;
     }
-    public static void putCharInBlank(String[] blank, String originalWord, String symbol, int mistakesCount){
+    public static void putCharInBlank(String[] blank, String originalWord, String symbol){
         for (int i = 0; i < blank.length; i++) {
                 if (originalWord.charAt(i) == symbol.charAt(0)) blank[i] = (symbol);
         }
